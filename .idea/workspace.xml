@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="74e313e9-f9fb-4c98-b936-4d66f12b0f1e" name="Default" comment="">
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\404.page.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\404_page.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\application.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\cache\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\cache\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\autoload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\cms_admin_config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\constants.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\database.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\doctypes.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\foreign_chars.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\migration.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\mimes.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\routes.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\smileys.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\config\user_agents.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\controllers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\controllers\welcome.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\core\MY_Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\core\MY_Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\core\MY_Model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\core\MY_Router.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\core\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\errors\error_404.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\errors\error_db.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\errors\error_general.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\errors\error_php.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\errors\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\helpers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\hooks\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\language\english\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\language\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\BaseAdminController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\BaseDefaultController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\BaseHomeController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\HomeBaseController.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\categories.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\layout.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\my_paginationer.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\libraries\rating.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\logs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\models\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\brand.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\dashbroad.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\home.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\order.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\report.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\slider.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\controllers\user.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\brand_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\category_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\country_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\images_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\order_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\product_draft.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\product_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\slider_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\models\user_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\brand\listBrands.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\brand\search_brand.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\brand\update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\category\category_move.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\category\index_category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\category\insertCategory.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\category\list_category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\dashbroad\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\home\home.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layout\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layout\header.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layout\layout.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layouts\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layouts\header.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layouts\layouts.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layouts\leftSideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\layouts\rightSideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\order\list_orders.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\product\listProduct.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\product\product_update.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\report\index_report_category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\report\index_report_products.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\report\template_report_product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\slider\slider_select.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\user\insert_user.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\user\listUsers.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\admin\views\user\loginview.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\controllers\category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\controllers\comments.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\controllers\home.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\controllers\page.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\controllers\product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\brand_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\category_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\comment_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\config_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\images_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\page_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\product_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\product_review_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\models\slide_model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\report\index_report_category.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\report\index_report_products.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\report\template_report_product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\breadCrumb.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\center.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\footer.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\header.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\main_content.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\rightSideBar.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\layouts\wrap_center.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\product\filter_product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\product\list_product.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\product\product_detail.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\modules\home\views\product\search_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Base.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Ci.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Modules.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\MX\Router.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\third_party\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\views\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\application\views\welcome_message.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\captcha\1410018850.402.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\index.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\license.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\pass.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\admin\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\admin\style.header.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\admin\style.list.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\frontend\alz_30_08-2014.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\frontend\jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\frontend\jquery.fancybox.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\frontend\styles.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\css\frontend\superfish.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap-theme.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap-theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap.css.map" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\datepicker3.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\rating.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\star-rating.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\star-rating.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\css\style.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\css\a.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\font_awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\fonts\glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\fonts\glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\fonts\glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\fonts\glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\ico\favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\4_start_rating.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\Smile_face_happy_emoticon_smiley_laugh_big.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\banner_camnang_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\banner_camnang_2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\banner_camnang_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\facebook_circle_color-32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\google_circle_color-32.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_arow_camnang.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_hsocuaban.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_mail_foter.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_new_admin.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_new_lookjob.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_search2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_setting.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_tel_foter.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\ic_ungvien_search.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\lookjob_20140702080735.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\no-image.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\s.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\scout_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\tat.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\x.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\img\xx.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\jquery-1.11.0.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\jquery-ui-1.11.1.custom-redmond.zip" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\my_js.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\my_rating.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\rating.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\star-rating.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\home\assets\js\star-rating.min.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\MUATUUTRUONG2a.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\8xb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\Samsung-Galaxy-V-kich-800x496-thuoc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\bnr_nowAccepting_150x60.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\call_skype_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\cart-bg.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\dien_thoai_samsung_galaxy_win_i8552.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\facebook.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\file_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\file_1_1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\file_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\file_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\i_asc_arrow.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\image03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\links-marker.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\marker-2.gif" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\nav-bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\rss.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\twitter.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\frontend\xl5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\100\HTC-One-Mini-2-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\100\temp\HTC-One-Mini-2-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\10\temp\xl5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\10\xl5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\11\temp\zenfone-4-a450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\11\zenfone-4-a450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\17\Kenshin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\17\temp\Kenshin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\2\bedtimestories_1356045c1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\2\couple-watching-tv.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\2\file_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\2\temp\file_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\4\file_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\4\file_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\4\temp\file_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\5\image03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\5\temp\image03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\6\dien_thoai_samsung_galaxy_win_i8552.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\6\temp\dien_thoai_samsung_galaxy_win_i8552.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\76\Asus-Zenfone-4-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\76\temp\Asus-Zenfone-4-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\79\asus-zenfone-6_clip_image006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\79\temp\asus-zenfone-6_clip_image006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\7\8xb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\7\temp\8xb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\80\Untitled-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\80\temp\Untitled-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\81\ipad-mini_clip_image002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\81\temp\ipad-mini_clip_image002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\8xb.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\90\Samsung-Galaxy-Tab-4-T311-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\90\temp\Samsung-Galaxy-Tab-4-T311-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\91\Samsung-Galaxy-Tab-3-Lite-T111-hinh360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\91\temp\Samsung-Galaxy-Tab-3-Lite-T111-hinh360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\92\Asus-FonePad-7FE170CG-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\92\temp\Asus-FonePad-7FE170CG-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\93\Sony-Xperia-Z1-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\93\temp\Sony-Xperia-Z1-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\94\iPhone-4S-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\94\temp\iPhone-4S-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\95\iPhone-4S-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\95\temp\iPhone-4S-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\96\Nokia-Lumia-930-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\96\temp\Nokia-Lumia-930-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\97\samsung-galaxy-alpha-360-1-35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\97\temp\samsung-galaxy-alpha-360-1-35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\98\LG-G3-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\98\temp\LG-G3-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\99\Samsung-Galaxy-Note-3-Neo-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\99\temp\Samsung-Galaxy-Note-3-Neo-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\9\Samsung-Galaxy-V-kich-800x496-thuoc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\9\temp\Samsung-Galaxy-V-kich-800x496-thuoc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Asus-FonePad-7FE170CG-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Asus-Zenfone-4-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\HTC-One-Mini-2-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\LG-G3-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Nokia-Lumia-930-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Samsung-Galaxy-Note-3-Neo-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Samsung-Galaxy-Tab-3-Lite-T111-hinh360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Samsung-Galaxy-Tab-4-T311-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Samsung-Galaxy-V-kich-800x496-thuoc.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Sony-Xperia-Z1-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\Untitled-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\asus-zenfone-6_clip_image006.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\dien_thoai_samsung_galaxy_win_i8552.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\file_1_3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\file_4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\iPhone-4S-360-36.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\image03.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\ipad-mini_clip_image002.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\samsung-galaxy-alpha-360-1-35.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\xl5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\images\product\zenfone-4-a450.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\admin\jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\admin\jquery.nestable.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\admin\js.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\home\cookies.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\home\jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\js\home\jquery.fancybox.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\public\sql\fr06_group2.sql" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\read.txt" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\.htaccess" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Benchmark.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\CodeIgniter.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Common.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Config.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Controller.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Exceptions.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Hooks.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Input.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Loader.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Model.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Output.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Router.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Security.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\URI.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\Utf8.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\core\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_active_rec.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_cache.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\DB_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\cubrid\cubrid_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\cubrid\cubrid_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\cubrid\cubrid_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\cubrid\cubrid_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\cubrid\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mssql\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mssql\mssql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mssql\mssql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mssql\mssql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mssql\mssql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysql\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysql\mysql_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysql\mysql_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysql\mysql_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysql\mysql_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysqli\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysqli\mysqli_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysqli\mysqli_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysqli\mysqli_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\mysqli\mysqli_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\oci8\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\oci8\oci8_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\oci8\oci8_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\oci8\oci8_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\oci8\oci8_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\odbc\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\odbc\odbc_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\odbc\odbc_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\odbc\odbc_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\odbc\odbc_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\pdo\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\pdo\pdo_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\pdo\pdo_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\pdo\pdo_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\pdo\pdo_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\postgre\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\postgre\postgre_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\postgre\postgre_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\postgre\postgre_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\postgre\postgre_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlite\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlite\sqlite_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlite\sqlite_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlite\sqlite_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlite\sqlite_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlsrv\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlsrv\sqlsrv_driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlsrv\sqlsrv_forge.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlsrv\sqlsrv_result.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\drivers\sqlsrv\sqlsrv_utility.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\database\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\fonts\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\fonts\texb.ttf" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\array_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\captcha_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\cookie_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\date_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\directory_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\download_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\email_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\file_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\form_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\html_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\inflector_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\language_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\number_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\path_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\security_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\smiley_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\string_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\text_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\typography_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\url_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\helpers\xml_helper.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\calendar_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\date_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\db_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\email_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\form_validation_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\ftp_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\imglib_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\migration_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\number_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\profiler_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\unit_test_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\english\upload_lang.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\language\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\drivers\Cache_apc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\drivers\Cache_dummy.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\drivers\Cache_file.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\drivers\Cache_memcached.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\drivers\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cache\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Calendar.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Cart.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Driver.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Email.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Encrypt.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Form_validation.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Ftp.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Image_lib.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Javascript.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Log.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Migration.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Pagination.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Parser.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Profiler.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Session.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Sha1.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Table.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Trackback.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Typography.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Unit_test.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Upload.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\User_agent.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Xmlrpc.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Xmlrpcs.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\Zip.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\javascript\Jquery.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\fr06\system\libraries\javascript\index.html" afterPath="" />
+    </list>
+    <ignored path="fr06.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="fr06" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fr06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="74e313e9-f9fb-4c98-b936-4d66f12b0f1e" name="Default" comment="" />
+      <created>1410150963277</created>
+      <updated>1410150963277</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/modules/admin/controllers/product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="206" column="15" selection-start="8974" selection-end="8974" vertical-scroll-proportion="6.2759857" vertical-offset="0" max-vertical-offset="4131">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
