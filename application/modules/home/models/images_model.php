@@ -1,6 +1,5 @@
 <?php
 class images_model extends CI_Model{
-    protected $_table = "image";
     protected $_gallery_path = "";
     protected $_gallery_url = "";
     public function __construct(){
@@ -9,18 +8,6 @@ class images_model extends CI_Model{
         $this->_gallery_url = base_url()."public/images/product/";
         $this->_gallery_path = realpath(APPPATH. "../public/images/product");
         $this->load->helper('file');
-    }
-    public function getAllImage(){//ham nay cho slider
-        $this->db->select("*");
-        $query = $this->db->get($this->_table);
-        $result = array();
-        foreach($query->result_array() as $value){
-            $result[] = array(
-                "image_id" => $value['image_id'],
-                "image_name" => $value['image_path'],
-            );
-        }
-        return $result;
     }
      public function getMainImages($image_id){
         $this->db->select('*');
@@ -78,5 +65,14 @@ class images_model extends CI_Model{
             };
             return $images;
         }
-   }
+    }
+    //Acc1 Start
+    public function get_all_image(){
+        $this->db->select('*');
+        $this->db->from('image');
+        $query = $this->db->get();
+        $result = $query->result_array();
+        return $result;
+    }
+    // Acc1 End
 }

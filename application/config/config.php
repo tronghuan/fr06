@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://mobiles.com.local/fr06';
+$config['base_url']	= 'http://localhost/mock';
 
 /*
 |--------------------------------------------------------------------------

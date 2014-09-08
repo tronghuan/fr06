@@ -6,72 +6,44 @@
     </div>
     <div class="block-content">
         <p class="block-subtitle">Shopping Options</p>
-        <dl id="narrow-by-list">
-            <dt>Price</dt>
-            <dd>
-                <ol>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?price=-100"><span class="price">$0.00</span> - <span class="price">$99.99</span></a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?price=200-300"><span class="price">$200.00</span> - <span class="price">$299.99</span></a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?price=300-400"><span class="price">$300.00</span> - <span class="price">$399.99</span></a>
-                        (2)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?price=400-"><span class="price">$400.00</span> and above</a>
-                        (1)
-                    </li>
-                </ol>
-            </dd>
-            <dt>Manufacturer</dt>
-            <dd>
-                <ol>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?manufacturer=15">BlackBerry</a>
-                        (2)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?manufacturer=14">Kyocera</a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?manufacturer=37">Motorola</a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?manufacturer=13">T-Mobile</a>
-                        (1)
-                    </li>
-                </ol>
-            </dd>
-            <dt>Color</dt>
-            <dd>
-                <ol>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?color=1">black</a>
-                        (2)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?color=2">blue</a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?color=4">grey</a>
-                        (1)
-                    </li>
-                    <li>
-                        <a href="http://livedemo00.template-help.com/magento_43805/mobile-phones.html?color=9">silver</a>
-                        (1)
-                    </li>
-                </ol>
-            </dd>
-        </dl>
-<!--        <script type="text/javascript">decorateDataList('narrow-by-list')</script>-->
+        <!-- Acc1 Start -->
+        <script>
+            $(function() {
+                $( "#slider" ).slider({
+                    range: true,
+                    min: 0,
+                    max: 30000000,
+                    step: 50000,
+                    values: [ 0, 30000000 ],
+                    slide: function( event, ui ) {
+                        $( "#amount" ).val( ui.values[ 0 ] + " - " + ui.values[ 1 ] + "VND");
+                        $( "#min" ).attr("value",ui.values[ 0 ]);
+                        $( "#max" ).attr( "value",ui.values[ 1 ]);
+                    }
+                });
+
+                $( "#amount" ).val( $( "#slider" ).slider( "values", 0 ) +
+                " - " + $( "#slider" ).slider( "values", 1 ) + "VND");
+            });
+
+        </script>
+        <p>
+        <label for="amount">Price range:</label>
+        <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+        </p>
+        <div id="slider"></div>
+        <form action="<?php echo base_url(); ?>home/product/filter" method="post">
+            <?php  
+                foreach($brand as $key => $value){
+                    echo "<input type='checkbox' name='brand_".$value['brand_id']."' value='".$value['brand_id']."' />".$value['brand_name']."<br />";
+                }
+            ?>
+            <input hidden type="text" id="min" name="min" value="0" />
+            <input hidden type="text" id="max" name="max" value="30000000" />
+            <input type="submit" name="submit" value="Submit" />
+        </form>
+
+        <!-- Acc1 End -->
     </div>
 </div>
     <div class="block block-cart">

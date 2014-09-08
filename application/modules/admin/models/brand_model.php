@@ -33,7 +33,7 @@
 				$result[] = array(
 					"brand_id" => $value['brand_id'],
 					"brand_name" => $value['brand_name'],
-					"brand_desc" => $value['brand_desc'],
+                    "brand_desc" => $value['brand_desc'],
 				);
 			}
 			return $result;

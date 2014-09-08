@@ -262,7 +262,6 @@ function ajax_get_product_content(pos_offset,address,id_target, base_address) {
                 var products = json['product'];
                 $(id_target).html('&nbsp;');
                 $.each(products, function (k, v) {
-                    console.log('ok');
                     tmp = add_product(base_address, v.product_id,v.product_name, v.product_price,v.product_sale, v.sale_price, v.product_mainImageId);
                     $(id_target).append(tmp);
                 });

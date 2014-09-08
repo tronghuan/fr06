@@ -46,12 +46,12 @@ class my_paginationer {
             $condi = $id - $this->_number_per_page;
             if ($condi >= 0)
                 $condi = (int) ($id / $this->_number_per_page) -  1;
-                $prev = '<li class="lt">';$prev .= '<a href="'. $this->_base_url.$this->_query_string.$condi * $this->_number_per_page.'">'.$this->_prev.'</a>';$prev .= '<li>';
+                $prev = '<li>';$prev .= '<a href="'. $this->_base_url.$this->_query_string.$condi * $this->_number_per_page.'">'.$this->_prev.'</a>';$prev .= '<li>';
             
             $next_condi = ($id + $this->_number_per_page) < $this->_total_number;
             if ($next_condi ) {
                 $condi = (int) ($id / $this->_number_per_page) + 1;
-                $next = '<li class="gt">';$next .= '<a href="'. $this->_base_url.$this->_query_string.$condi * $this->_number_per_page.'">'.$this->_next.'</a>';$next .= '</li>';
+                $next = '<li>';$next .= '<a href="'. $this->_base_url.$this->_query_string.$condi * $this->_number_per_page.'">'.$this->_next.'</a>';$next .= '</li>';
             }
         }
         $pages = '';

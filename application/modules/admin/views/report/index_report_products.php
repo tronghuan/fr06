@@ -3,10 +3,7 @@
         list-style: none;
     }
 </style>
-<script>
-    var bootstrapButton = $.fn.button.noConflict();
-    $.fn.bootstrapBtn = bootstrapButton;
-</script>
+
 <?php if (isset ($errors) || (isset($message))) {?>
 <div class="panel panel-default panel-warning">
     <div class="panel-heading">Administrator warning</div>
@@ -48,6 +45,7 @@
                                         $order = report::$_searchType;
                                         $this->session->set_flashdata('product_search_type', report::$_searchType);
                                     } else $order = 'ASC';
+
                 ?>
 
                     <div class="product_sort col-lg-offset-1    " >

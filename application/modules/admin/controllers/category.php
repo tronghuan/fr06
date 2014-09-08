@@ -215,4 +215,76 @@ class Category extends BaseAdminController{
         print_r ($cats);
         echo '</pre>';
     }
+
+    //HuanDT Account1
+    public function move(){
+        $result = array();
+        $result['info'] = $this->category_model->get_all_category();
+        $result['listitem'] = $this->listCat($result['info']);
+        $result['title'] = "Move categories";
+        $this->layout->view("category/category_move", $result);
+    }
+    public function listCat($data, $parent = 0, $lvl = 1){
+        $ret = "<ol class='dd-list'>";
+        $temp = array();
+        foreach($data as $d){
+            foreach($d as $key => $value){
+                if(!isset($temp[$key])){
+                    $temp[$key] = array();
+                }
+                $temp[$key][] = $value;
+            }
+        }
+        $orderby = "category_order";
+        // echo "<pre>";print_r($temp);
+        array_multisort($temp[$orderby], SORT_ASC, $data);
+        // echo "<pre>";print_r($data);die();
+        foreach($data as $key=>$value){
+            if($parent == $value['category_parentId']){
+                $ret .= "<li class='dd-item' data-id='".
+                    $value['category_id']."'><div class='dd-handle'>".
+                    $value['category_name']."</div>";
+                $sub = $this->listCat($data, $value['category_id'], $lvl+1);
+                if($sub != "<ol class='dd-list'></ol>"){
+                    $ret .= $sub;
+                }
+                $ret .= "</li>";
+            }
+        }
+        return $ret."</ol>";
+    }
+    public function move_process(){
+        // echo "vao"; die();
+        $all = $this->category_model->get_all_category();
+        // echo "<pre>"; print_r($all);die();
+        $update = $_POST['data'];
+        // echo "<pre>"; print_r($update);die();
+        $o = 1;
+        $order = array();
+        $parent = array();
+        foreach($update as $key => $value){
+            foreach($all as $a => $b){
+                $key = filter_var($key, FILTER_SANITIZE_NUMBER_INT);
+                if($key == $b['category_id']){
+                    if($value != $b['category_parentId']){
+                        $parent[] = array(
+                            "category_id" => $key,
+                            "category_parentId" => $value,
+                        );
+                    }
+                    $order[] = array(
+                        "category_id" => $key,
+                        "category_order" => $o++,
+                    );
+                    continue;
+                }
+            }
+        }
+        // echo "<pre>"; print_r($order);die();
+        // echo "<pre>"; print_r($parent);die();
+        // echo $o;die();
+        $this->category_model->move_category($parent);
+        $this->category_model->set_order($order);
+    }
+    // END HuanDT
 }

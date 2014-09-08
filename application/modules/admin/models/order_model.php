@@ -10,7 +10,7 @@ class Order_model extends MY_Model
     $this->_table ='order';
     $this->_primaryID = 'order_id';
   }
-  public function get_order_from_to($startDate, $endDate, $limit, $start, $order_by = 'ASC', $title = 'order_date', $search = '', $search_fields  = null)
+  public function ($startDate , $endDate, $limit, $start, $order_by = 'ASC', $title = 'order_date', $search = '', $search_fields  = null)
   {
     $result = array ();
     if ($search !== '') {
@@ -104,4 +104,5 @@ class Order_model extends MY_Model
     $result_d = $query->result_array();
     return $result_d;
   }
+
 }

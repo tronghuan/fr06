@@ -56,12 +56,12 @@ class category_model extends MY_Model
     }
     public function move_category($data){
         if(!empty($data)){
-            $this->db->update_batch($this->_table, $data, $this->_category_id);
+            $this->db->update_batch($this->_table, $data, $this->_primaryID);
         }
     }
     public function set_order($data){
         if(!empty($data)){
-            $this->db->update_batch($this->_table, $data, $this->_category_id);
+            $this->db->update_batch($this->_table, $data, $this->_primaryID);
         }
     }    
 }

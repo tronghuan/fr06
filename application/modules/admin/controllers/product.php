@@ -15,8 +15,8 @@ class Product extends BaseAdminController{
         $this->load->model('product_model');
         $this->load->model('images_model');
         $this->load->model('category_model');
-        $this->load->model('slider_model');
         $this->load->model('brand_model');
+        $this->load->model('slider_model');
         $this->load->model('country_model');
         $this->load->library('pagination');
         $this->load->library('my_paginationer');
@@ -38,12 +38,12 @@ class Product extends BaseAdminController{
           $title = $this->input->post('search_name');
           $order = $this->input->post('type_search');
         } else {
-          if ($this->session->flashdata('product_search_name') != FALSE){
-            $title = $this->session->flashdata('product_search_name');
-          }
-          if ($this->session->flashdata('product_search_type') != FALSE){
-            $order = $this->session->flashdata('product_search_type');
-          }
+            if ($this->session->flashdata('product_search_name') != FALSE){
+                $title = $this->session->flashdata('product_search_name');
+            }
+            if ($this->session->flashdata('product_search_type') != FALSE){
+                $order = $this->session->flashdata('product_search_type');
+            }
         }
         self::$_searchName = $title;
         self::$_searchType = $order;
@@ -77,13 +77,14 @@ class Product extends BaseAdminController{
         if ($search !== '')
         	$this->my_paginationer->set_total_number($this->product_model->total_records($product_search_fields, $search));
         else
-        	$this->my_paginationer->set_total_number($this->product_model->total_records($product_search_fields, $search));
+        	$this->my_paginationer->set_total_number($this->product_model->total_records());
         $this->my_paginationer->set_per_page($limit);
         $links = $this->my_paginationer->page_links($start);
         $this->data['links'] = $links;
         $this->data['limit'] = $limit;
         $this->data['slider'] = $this->slider_model->get_slider_order();
         $this->data['results'] = $this->product_model->list_products($limit, $start, $order , $title, $search, $product_search_fields);
+        // echo "<pre>"; print_r($this->data['results']);die();
         foreach($this->data['results'] as $key => $rs){
             foreach($images as $img){
                 if($rs['product_mainImageId'] == $img['image_id']){
@@ -91,12 +92,14 @@ class Product extends BaseAdminController{
                 }
             }
         }
-        //echo "<pre>"; print_r($this->data['results']);die();
+        // echo "<pre>"; print_r($this->data['results']);die();
         foreach ($this->data['results'] as $key => $value) {
             $this->data['results'][$key]['product_date'] = date('m-d-Y',$this->data['results'][$key]['product_date']);
             $src = $this->data['results'][$key]['product_mainImageId'] != null ? $this->images_model->get_images($this->data['results'][$key]['product_id'],$this->data['results'][$key]['product_mainImageId']) : 0;
+            // echo "<pre>"; print_r($srcx[0]['url']);die();
             $src = $src != 0 ?  '<img class="thumbnail" width="150px" height="150px" src="'.$src[0]['url'].'" alt= />' : '<img width="150px" height="150px" src="'. base_url('public/home/assets/img/no-image.png') .'" >';
-            $this->data['results'][$key]['product_mainImageId'] = $src;
+            // echo "<pre>"; print_r($src);die();
+            $this->data['results'][$key]['product_mainImage'] = $src;
         }
         foreach($this->data['results'] as $key => $value){
             foreach($brands as $brand){
@@ -118,7 +121,7 @@ class Product extends BaseAdminController{
         	$ret['i'] = $this->data['i'];
         	echo json_encode($ret); // echo json to ajax
         }else
-            //echo "<pre>"; print_r($this->data);die();
+            // echo "<pre>";print_r($this->data['slider']);die();
             $this->layout->view("product/listProduct", $this->data);
     }
 
@@ -216,6 +219,7 @@ class Product extends BaseAdminController{
         $this->images_model->del_id($image_id);
         redirect(base_url().'admin/product/update/'.$product_id);
     }
+
     public function setSlider(){
         $slider = $_POST['slider'];
         if ($slider['img_order'] == "add"){
@@ -231,11 +235,4 @@ class Product extends BaseAdminController{
             $this->slider_model->delete_slider($slider['pro_id']);
         }
     }
-    public function total($search)
-    {
-        $product_search_fields = array ('product_name', 'product_desc', 'product_price');
-        $total_record = $this->product_model->total_records($product_search_fields,$search);
-        echo $total_record;
-    }
-
 }

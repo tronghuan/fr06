@@ -134,7 +134,7 @@ class User  extends  BaseAdminController
                     $tb = $this->validate($db);
                     if ( $tb != '') echo $tb;
                     else {
-												$db['user_password'] = $db['user_password'];
+												$db['user_password'] = $db['user_password'].config_item('security_key');
 												$db['user_password'] = md5($db['user_password']);						
 												$this->user_model->insert($db);
 												$data['success'] = 'Thêm thành công.';
@@ -193,6 +193,7 @@ class User  extends  BaseAdminController
 			    "password" => md5($this->input->post("txtPass")),
 			);
 			$check = $this->user_model->isValidate($dataUser);
+			// echo $check ? "true" : "false"; die();
 			if($check){
 			    $_SESSION['user'] = $check;
 			    redirect(base_url('index.php/admin/home/index'));
@@ -200,6 +201,7 @@ class User  extends  BaseAdminController
 	//                    $this->_check = false;
 			    echo "That bai";
 			}
+	
 		    }
 		}
 		$this->load->view("user/loginview");

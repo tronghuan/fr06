@@ -74,6 +74,7 @@ class Product_model extends MY_Model{
                 $this->db->where($andWhere);
                 $query = $this->db->get();
             }
+            // $this->db->group_by($this->_primaryID);
             $result = $query->result_array();
             return $result;
         }
@@ -91,55 +92,7 @@ class Product_model extends MY_Model{
         $ret['rows'] = $query->num_rows();
         return $ret;
     }
-    //public function total_records($titles = '', $var='', $categories = array())
-    //{
-    //    $nums  = 0;
-    //    if ($titles && $var) {
-    //        if (is_array($titles)) {
-    //           $i = 0;$total = 0;
-    //            $where = empty($categories) ? '' : '( ';
-    //            foreach ($titles as $title) {
-    //                $where .= $title . ' ' . 'like '. '"%'.$var.'%"' . ' ' . 'OR ';
-    //            }
-    //            mb_internal_encoding('utf-8');
-    //            $len = mb_strlen($where);
-    //            $where = mb_substr($where,0, $len-3);
-    //            $where .= empty($categories) ?  '' : ')';
-    //            $this->db->select($this->_primaryID);
-    //            $this->db->where($where);
-    //            $query = $this->db->get($this->_table);
-    //
-    //
-    //        }else {
-    //            $this->db->like($title, $var);
-    //        }
-    //    }else {
-    //        $this->db->select($this->_table . '.' .$this->_primaryID);
-    //    }
-    //
-    //    if (empty($categories)) {
-    //        $query = $this->db->get($this->_table);
-    //    }else {
-    //        $this->db->select($this->_table . '.' .$this->_primaryID);
-    //        $this->db->from($this->_table);
-    //        $this->db->join('productcategory', 'productcategory.product_id = product.product_id');
-    //        $andWhere = '(';
-    //        foreach($categories as $c) {
-    //            $andWhere .= 'category_id' . '="' .$c . '" OR ';
-    //        }
-    //        mb_internal_encoding('utf-8');
-    //        $len = mb_strlen($andWhere);
-    //        $andWhere = mb_substr($andWhere,0, $len-3);
-    //        $andWhere .= ')';
-    //        $this->db->where($andWhere);
-    //        $query = $this->db->get();
-    //    }
-    //    $nums = $query->num_rows();
-    //    return $nums;
-    //}
-    //
-    
-        public function total_records($titles = '', $var='', $categories = array())
+    public function total_records($titles = '', $var='', $categories = array())
     {
         $nums  = 0;
         if ($titles && $var) {
@@ -155,13 +108,16 @@ class Product_model extends MY_Model{
                 $where .= empty($categories) ?  '' : ')';
                 $this->db->select($this->_primaryID);
                 $this->db->where($where);
+                $query = $this->db->get($this->_table);
+
+
             }else {
                 $this->db->like($title, $var);
             }
         }else {
             $this->db->select($this->_table . '.' .$this->_primaryID);
         }
-        $this->db->group_by('product.product_id');
+
         if (empty($categories)) {
             $query = $this->db->get($this->_table);
         }else {
@@ -179,12 +135,10 @@ class Product_model extends MY_Model{
             $this->db->where($andWhere);
             $query = $this->db->get();
         }
+        // $this->db->group_by($this->_primaryID);
         $nums = $query->num_rows();
         return $nums;
     }
-        
-  
-    
     public function getProduct_Cate($id){
         $this->db->select('*');
         $this->db->from('productcategory');

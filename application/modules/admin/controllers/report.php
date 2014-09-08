@@ -64,8 +64,8 @@ class Report extends BaseAdminController {
         $startDate = explode('-', $startDate);
         $startDate = mktime(0,0,0, $startDate[1], $startDate[0], $startDate[2]);
 
-        $endDate = explode('-', $endDate);        
-        $endDate = mktime(23,59,59, $endDate[1], $endDate[0], $endDate[2]);
+        $endDate = explode('-', $endDate);
+        $endDate = mktime(0,0,0, $endDate[1], $endDate[0], $endDate[2]);
         //$this->data['orders'] = $this->order_model->get_order_product_from_to($startDate, $endDate);
         $result_a = $this->order_model->get_order_product_from_to($startDate, $endDate);
         $result_b = $this->order_model->get_product_order_from_to($startDate, $endDate, $limit, $start);
@@ -152,32 +152,22 @@ class Report extends BaseAdminController {
                 $s = count($cat_pros);
                 $array_a = array();
                 $array_a[] = $cat_pros[$i];
-                //var_dump($i);
-                //echo 'start again<hr/>';
                 $start = true;
               }else{
                 if ($s == $n)$s = $i;
                 $start = false;
               }
-              //echo $i . '+';
             }else {
                 if(! empty($array_a) && $start && ! in_array($cat_pros[$i]->getID() , $array_b)) {
                   $array_a[] = $cat_pros[$i];
                 }
             }
           }
-          //var_dump($array_a);
-          if ($c == 2)die();
-          //var_dump($cat_pros);
           if (! empty($array_a)) {
             foreach($array_a as $e){
               $result_c[] = $e;
               $array_b[]=$e->getID();
             }
-            //echo $level;
-            //echo $d . ', ' . $s;
-            //var_dump($array_b);
-            //var_dump($result_c);
             $len += count($array_a);
           }
         }
@@ -192,6 +182,7 @@ class Report extends BaseAdminController {
 
       $this->layout->view('report/index_report_products', $this->data);
     }else if($change == 'category') {
+
     }
   }
 

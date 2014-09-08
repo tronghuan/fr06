@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 class Product extends BaseHomeController {
 
     public static $category_model;
@@ -17,6 +17,7 @@ class Product extends BaseHomeController {
         $this->load->model('images_model');
         $this->load->library('pagination');
         $this->load->model('config_model');
+        $this->load->model('brand_model');
         $this->load->model('category_model');
         $this->load->model('comment_model');
         $this->load->library('rating');
@@ -143,12 +144,16 @@ class Product extends BaseHomeController {
                 $categories = $this->session->flashdata('ajax_categories');
                 $this->session->keep_flashdata('ajax_categories');
             }
+			if ($action == 'ajax_flashdata') {
+				$data['result'] = 'ajax';
+				echo json_encode($data);
+				die();
+			}
             $this->session->set_flashdata('ajax', true);
-        }
-		if ($ajax == false || $action == 'ajax_pagination'){
+        } else{
             $prev_ajax = $this->session->flashdata('ajax');
             $prev_categories = $this->session->flashdata('ajax_categories');            
-            if (($prev_ajax && $prev_categories == $categories) || $action == 'ajax_pagination') {
+            if (($prev_ajax && $prev_categories == $categories) || $action == 'ajax_paginationer') {
                 $title = $this->session->flashdata('product_home_search_name') ? $this->session->flashdata('product_home_search_name') : $title;
                 $order = $this->session->flashdata('product_home_search_type') ? $this->session->flashdata('product_home_search_type') : $order;
                 //$categories = $this->session->flashdata('ajax_categories');
@@ -185,17 +190,16 @@ class Product extends BaseHomeController {
             $offset = 0;
         };
         // make a better choice for sort but need to optimization for search and filter
-		if (isset($action) && $action == 'ajax_pagination') {
-			if ($this->input->post('pos_offset') != false) {
+		if ($ajax && (isset($action) && $action == 'ajax_pagination')) {
+			if ($this->input->post('pos_offset') != false || true) {
 				$offset = ($this->input->post('pos_offset') - 1) * $per_page;
 				$this->session->set_flashdata('offset', $offset);
-			//	$result['lala'] = $offset;
 			}
 		}
         if (!$ajax) {
             $this->session->set_flashdata('offset', $offset);
-        }else if ($action != 'ajax_pagination'){
-            if ($this->session->flashdata('offset') !== false) {
+        }else {
+            if ($this->session->flashdata('offset') !== false && $action !== 'ajax_pagination') {
                 $offset = $this->session->flashdata('offset');
             }
             $this->session->keep_flashdata('offset');
@@ -204,14 +208,58 @@ class Product extends BaseHomeController {
 		$this->my_paginationer->set_total_number($total_product);
 		$this->my_paginationer->set_per_page($per_page);
 		$this->my_paginationer->set_query_string('?per_page=');
-		
-        if ($categories != '') {
-			$this->my_paginationer->set_base_url(base_url() . 'home/product/index/'. $categories );
-        } else {
-			$this->my_paginationer->set_base_url(base_url() . 'home/product/index');
-        }
+        //demo pagination prepare pagination
+        $config['total_rows'] = $total_product;
+        $config['per_page'] = $per_page;
 
-        //$pagination = $this->pagination->create_links(); # Tạo link phân trang
+        // If you want to wrap your pagination in something
+        $config['full_tag_open'] = '<ul class="pagination">';
+        $config['full_tag_close'] = '</ul>';
+
+        // If you want to wrap the "go to first" link
+        $config['first_link'] = 'First';
+        $config['first_tag_open'] = '<li class="first-link">';
+        $config['first_tag_close'] = '</li>';
+
+        // If you want to wrap the "go to last" link
+        $config['last_link'] = 'Last';
+        $config['last_tag_open'] = '<li class="last-link">';
+        $config['last_tag_close'] = '</li>';
+
+        // If you want to wrap the next link
+        $config['next_link'] = 'Next';
+        $config['next_tag_open'] = '<li class="next-link">';
+        $config['next_tag_close'] = '</li>';
+
+        // If you want to wrap the previous link
+        $config['prev_link'] = 'prev';
+        $config['prev_tag_open'] = '<li class="prev-link">';
+        $config['prev_tag_close'] = '</li>';
+
+        // Wrap/style active link
+        $config['cur_tag_open'] = '<li class="active"><a>';
+        $config['cur_tag_close'] = '</a></li>';
+
+        // Wrap the 'digit' link.
+        $config['num_tag_open'] = '<li>';
+        $config['num_tag_close'] = '</li>';
+
+
+        if ($categories != '') {
+            $config['base_url'] = base_url() . '/home/product/index/' . $categories . '?';
+			$this->my_paginationer->set_base_url(base_url() . 'home/product/index/'. $categories );
+			$config['uri_segment'] = 5;
+			$config['use_page_numbers'] = FALSE;
+        } else {
+            $config['base_url'] = base_url() . '/home/product/?per_page=';
+			$this->my_paginationer->set_base_url(base_url() . 'home/product/index');
+            $config['uri_segment'] = 3;
+            $config['use_page_numbers'] = FALSE;
+        }
+        $config['page_query_string'] = TRUE;
+        $this->pagination->initialize($config);
+
+        $pagination = $this->pagination->create_links(); # Tạo link phân trang
 		$pagination = $this->my_paginationer->page_links($offset);
         // get data per_page
         $data_get['new_product'] = $this->product_model->list_products($per_page, $offset, $order, $title, '', array(), $cat_ids);
@@ -250,14 +298,19 @@ class Product extends BaseHomeController {
         //make pager
         $data['nums'] = $total_product;
         $data['ajax_pagination'] = 1;
+        // echo "<pre>";print_r($data['new_product']);die();
+        // Acc1 Start Get All brands
+        $data['brand'] = $this->brand_model->getAllBrand();
+        // Acc1 End Get All brands
         //load view
-        if ($ajax || $action == 'ajax_pagination') {
+        if ($ajax || $action == 'ajax_paginationer') {
             $result ['product'] = $data['new_product'];
             $result ['links'] = $pagination;
             $result ['cat'] = $cats;
             $result ['per_page'] = $offset;
             echo json_encode($result);
         } else{
+            //var_dump($this->layout);
             $this->layout->view('product/list_product', $data);                    
         }
     }
@@ -497,8 +550,97 @@ class Product extends BaseHomeController {
         self::$_searchName = $title;
         self::$_searchType = $order;
     }
-    public function test_ajax() {
-        
+    // Acc1 Start
+    public function filter() {
+        // echo "Vao filter"; die();
+        $data = array();
+        $sess = array();
+        $page_number = $this->uri->segment(4) ? $this->uri->segment(4) : 1;
+        $range_price = array(
+            'min' => 0,
+            'max' => 30000000,
+        );
+        $brand_id = array();
+        $data['title'] = "List all product apply filter!";
+        if(isset($_POST['submit'])){
+            foreach($_POST as $key => $value){
+                if(strpos($key, 'brand_') !== false){
+                    $brand_id[$key] = $value;
+                    $sess[$key] = $value;
+                    $sess['min'] = $_POST['min'];
+                    $sess['max'] = $_POST['max'];
+                }
+                $range_price['min'] = $_POST['min'];
+                $range_price['max'] = $_POST['max'];
+                
+            }
+            // echo "<pre>";print_r($_POST); die();
+        }else{
+            $t = $this->session->userdata('ten');
+            foreach($t as $key=>$value){
+                if(strpos($key, 'brand_') !== false){
+                    $brand_id[$key] = $value;
+                    $sess[$key] = $value;
+                    $sess['min'] = $t['min'];
+                    $sess['max'] = $t['max'];
+                }
+                $range_price['min'] = $t['min'];
+                $range_price['max'] = $t['max'];
+            }
+        }
+        $number_per_page = $this->config_model->number_per_page();
+        foreach($number_per_page as $key=> $value);
+            $per_page  =  $value['config_value'];
+        $this->session->set_userdata('ten',$sess);
+        $data['total'] = $this->product_model->count_all_product($range_price, $brand_id);
+
+        $config['base_url'] = base_url().'home/product/filter/';
+        $config['total_rows'] = $data['total'];
+        $config['per_page'] = $per_page;
+        $config['uri_segment'] = 4;
+        $config['use_page_numbers'] = TRUE;
+        $start = ($page_number - 1)*$config['per_page'];
+        $config['page_number'] = $page_number;
+
+        $config['next_link']        =   'Next';
+        $config['next_tag_open'] = '<li>';
+        $config['next_tag_close'] = '</li>';
+        $config['prev_tag_open'] = '<li>';
+        $config['prev_tag_close'] = '</li>';
+        $config['prev_link']        =   'Prev';
+        $config['num_tag_open']     =   '<li>';
+        $config['num_tag_close']    =   '</li>';
+        $config['first_tag_open']       =   '<li>';
+        $config['first_tag_close']  =   '</li>';
+        $config['last_tag_open']        =   '<li>';
+        $config['last_tag_close']   =   '</li>';
+        $config['num_links']        =   4;
+        $config['cur_tag_open']     =   '<li class="active"><a>';
+        $config['cur_tag_close']    =   '</a></li>';
+
+        $this->pagination->initialize($config);
+        $data['pagination'] = $this->pagination->create_links();
+
+        $data['all_product'] = $all_product = $this->product_model->get_all_product($range_price, $brand_id, $start, $config['per_page']);
+        // echo "<pre>";print_r($data['all_product']);die();
+        $data['brand'] = $this->brand_model->getAllBrand();
+        $all_image = $this->images_model->get_all_image();
+        foreach($data['all_product'] as $key_pro => $value_pro){
+            foreach($all_image as $key_img => $value_img){
+                if($value_pro['product_mainImageId'] == $value_img['image_id'])
+                    $data['all_product'][$key_pro]['image_name'] = $value_img['image_path'];
+            }
+        }
+        foreach($data['all_product'] as $key_pro => $value_pro){
+            if($value_pro['product_sale'] > 0){
+                $data['all_product'][$key_pro]['new_price'] = $value_pro['product_price']*(100-$value_pro['product_sale'])/100;
+            }else {
+                $data['all_product'][$key_pro]['new_price'] = $value_pro['product_price'];
+            }
+        }
+        // echo "<pre>"; print_r($data['all_product']);die();
+        $this->layout->view('product/filter_product',$data);
     }
+    // Acc1 End
 
 }

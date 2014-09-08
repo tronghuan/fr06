@@ -10,6 +10,7 @@ class images_model extends MY_Model{
         $this->_gallery_path = realpath(APPPATH. "../public/images/product");
         $this->load->helper('file');
     }
+
     public function getAllImage(){//ham nay cho slider
         $this->db->select("*");
         $query = $this->db->get($this->_table);

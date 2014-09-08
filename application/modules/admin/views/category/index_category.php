@@ -4,6 +4,9 @@
     <div class="panel-heading">
       Danh sách Category
     </div>
+    <div>
+      <a href="<?php echo base_url(); ?>admin/category/move">Move</a>
+    </div>
     <div class="panel-body">
       <?php
           foreach ($cats as $c)

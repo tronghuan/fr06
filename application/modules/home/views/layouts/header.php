@@ -4,11 +4,14 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<link href="<?php echo base_url();?>public/css/frontend/styles.css" rel="stylesheet" type="text/css">
 	<link href="<?php echo base_url();?>public/css/frontend/superfish.css" rel="stylesheet" type="text/css">
-<!--	<link href="<?php echo base_url();?>public/css/frontend/camera.css" rel="stylesheet" type="text/css">-->
-<!--	<link href="<?php echo base_url();?>public/css/frontend/css_003.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url();?>public/css/frontend/css_002.css" rel="stylesheet" type="text/css">
-    <link href="<?php echo base_url();?>public/css/frontend/css.css" rel="stylesheet" type="text/css">-->
-
+    <!-- CSS link Acc1 Start -->
+    <link href="<?php echo base_url(); ?>public/css/frontend/jquery.fancybox.css" rel="stylesheet" type="text/css"/>
+    <link href="<?php echo base_url(); ?>public/css/frontend/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="<?php echo base_url(); ?>public/home/assets/js/jquery.min.js"></script>
+    <script src="<?php echo base_url(); ?>public/js/home/jquery-ui.js"></script>
+    <script src="<?php echo base_url(); ?>public/js/home/jquery.fancybox.js"></script>
+    <script src="<?php echo base_url(); ?>public/js/home/cookies.js"></script>
+    <!-- CSS link Acc1 End -->
 
 		<!-- Binh start editting add ome iles and odions -->
 		<title><?php if (isset($title_for_layout)) echo $title_for_layout; else echo $site_name;?></title>
@@ -20,28 +23,42 @@
     <link href="<?php echo base_url();?>public/home/assets/css/style.css" rel="stylesheet">
     <link href="<?php echo base_url();?>public/home/assets/font_awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="<?php echo base_url()?>public/home/assets/js/jquery.min.js"></script>
+        <!-- JS Acc1 Start -->
+    
+    <!-- JS Acc1 End -->
     <script src="<?php echo base_url()?>public/home/assets/js/bootstrap-datepicker.js"></script>
-    <!--<script src="<?php echo base_url()?>public/home/assets/js/jquery-ui.min.js"></script>-->
-    <!-- include -->
-    <!-- Include your script-->
+
     <script src="<?php echo base_url()?>public/home/assets/js/my_js.js"></script>
     <script src="<?php echo base_url()?>public/home/assets/js/my_rating.js"></script>
     <!-- Finish include-->
-
-		<!-- rating plugin -->
-<!--		<link href="<?php echo base_url();?>public/home/assets/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
-		<script src="<?php echo  base_url();?>pubic/home/assets/js/star-rating.js" type="text/javascript"></script>
-		<script src="<?php echo  base_url();?>public/home/assets/js/star-rating.min.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+    function openFancybox() {
+            setTimeout(function () {
+                $('#yt').trigger('click');
+            }, 200);
+        };
+        $(document).ready(function () {
+            var visited = $.cookie('visited');
+            if (visited == 'yes') {
+                return false; // second page load, cookie active
+            } else {
+                openFancybox(); // first page load, launch fancybox
+            }
+            $.cookie('visited', 'yes', {
+                expires: 1 // the number of days cookie  will be effective
+            });
+            $("#yt").click(function () {
+                $.fancybox({
+                    content: "<img src='http://localhost/mock/public/images/MUATUUTRUONG2a.png'/>",
+                    type: "iframe",
+                });
+                return false;
+            });
+        });
+</script>
 </head>
 <body class=" cms-index-index cms-home">
+<div id="yt"></div>
 <div class="wrapper end-lang-class">
 <noscript></noscript>
 <div class="page">

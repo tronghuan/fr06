@@ -7,7 +7,7 @@
                 <div class="toolbar">
                     <div class="pager">
                         <p class="amount">
-                            <strong><?php if (isset($nums))echo $nums . ' items';?></strong>
+                            <strong><?php echo $total; ?>&nbsp;&nbsp;items</strong>
                         </p>
                     </div>
 
@@ -109,8 +109,8 @@
 
                 <!--  list product: start-->
                 <div class="products-grid row" id="list-product">
-                    <?php if(isset($new_product) ) {?>
-                    <?php  foreach ($new_product as $product){?>
+                    <?php if(isset($all_product) ) {?>
+                    <?php  foreach ($all_product as $product){?>
                     <?php
                         $url = $product['product_name'];
                         mb_internal_encoding('utf-8');
@@ -121,16 +121,14 @@
                         <div class="row item-row">
                             <div class="product_info col-lg-12 col-sm-4">
                                 <a href="<?php echo $url;?>" title="<?php echo $product['product_name'] ?>" class="product-image">
-                                    <?php echo $product['product_mainImageId']?>
+                                    <img width="150px" height="150px" src="<?php echo base_url(); ?>/public/images/product/<?php echo $product['image_name'] ?>">
                                 </a>
                             </div>
                             <div class="product-shop col-lg-12 col-sm-8">
                                 <h2 class="product-name"><a href="<?php echo $url;?>" title="<?php echo $product['product_name']?>"><?php echo $product['product_name']; ?></a></h2>
                                 <div class="price-box">
                                        <span class="regular-price" id="product-price-1">
-                                            <span class="price"><?php
-
-                                                echo $product['sale_price']; ?>&nbsp;VND</span>
+                                            <span class="price"><?php echo $product['new_price']; ?>&nbsp;VND</span>
                                        </span>
 
                                 </div>
@@ -152,7 +150,7 @@
                         <div class="pager">
                             <p class="amount">
                                 <input type="hidden" id="ajax_pagination" value="<?php if(isset($ajax_pagination)) echo $ajax_pagination; else echo 0;?>"/>
-                                <strong><?php if (isset($nums))echo $nums . ' items';?></strong>
+                                <strong><?php echo $total; ?>&nbsp;&nbsp;items</strong>
                                 <div class="navigation" id="pagination-div-wrapp"style="float:right">
                                     <ul class="pagination"><?php if (isset($pagination))echo $pagination;?></ul>
                                 </div>

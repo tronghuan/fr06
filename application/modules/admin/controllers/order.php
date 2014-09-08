@@ -1,26 +1,24 @@
 <?php
 
-class Order extends BaseAdminController {
-	
-	public function __construct()
+class Order extends BaseAdminController 
+{
+
+	public function __consruct() 
 	{
-		parent::__construct();
+		parent::__consruct();
+		$this->load->model('order_model');
+		$this->load->model('config_model');		
 	}
-	
+
 	/**
-	 * List all order
-	 * Load view
-	 */
-	public function index()
+	* get all order 
+	*/
+	public function index($start, $limit = 7)
 	{
-		
+		$limit = $this->config_model->number_per_page();
+		$orders = $this->order_model->list_orders($start, $limit, $order = 'ASC', $title = 'order_date');
+		$this->data['orders'] = $orders;
+		$this->layout->view('order/list_order', $this->data);
 	}
-	/**
-	 * Order detail for shopping cart accept
-	 * linking data
-	 */
-	public function order_detail()
-	{
-		
-	}
+
 }

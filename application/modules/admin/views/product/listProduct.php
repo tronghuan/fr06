@@ -42,7 +42,7 @@
                 ?>
                     <div class="product_sort col-sm-6">
                         <form class="form-inline " method="post" action="" role="form" >
-                            <div class="form-group"><label for="search_name" class="control-label">Sắp xếp:</label>
+                            <div class="form-group"><label for="search_name" class="control-label" >Sắp xếp:</label>
                                 <select name="search_name" class="form-control input-sm"id="search">
                                     <option value="product_name" <?php if (isset($title) && ($title == 'product_name')) echo 'selected';?> >Tên sản phẩm</option>
                                     <option value="product_price" <?php if (isset($title) && ($title == 'product_price')) echo 'selected';?> >Giá</option>
@@ -73,7 +73,7 @@
                             <input class="form-control input-sm" type="text" placeholder="search ..." autocomplete="on" id="search-text"/>
                             <span class="input-group-btn">
                                 <button class="btn btn-default btn-sm" type="button" id="search-button">
-                                    <i class="fa fa-search"></i>
+                                    <i class="fa fa-search">S</i>
                                 </button>
                             </span>
                         </div>
@@ -110,13 +110,14 @@
                             result = ajax_product_send(address, name, value, base_url);                            
                         });
                     });
-                </script>                
+                </script>
+                <div class="clear"></div>                
                 <div class="col-sm-6">
-                    <table id="list-product" class="table table-responsive table-hover " role="table">
+                    <table id="list-product" class="table table-responsive table-hover table-condensed" role="table">
                         <thead>
                         <tr>
                             <td>STT</td>
-                            <td>Slider</td><!-- Acc1 -->
+                            <td>Slider</td>
                             <td>Image</td>            
                             <td>Name</td>
                             <td>Date</td>
@@ -135,7 +136,7 @@
                             <?php                      
                             ?>
                             <tr>
-                                <td><?php echo $i ++ ?></td>
+                                <td><?php echo ++$i ?></td>
                                 <td><input type='checkbox' class='slider-select' name='slider'
                                     <?php 
                                         foreach($slider as $key => $value){
@@ -151,13 +152,13 @@
                                     ?> 
                                     onclick="window.location='<?php echo base_url()?>admin/slider/add_delete_slider?pro_id=<?php echo $listPro['product_id'];?>'; return true;"
                                 ></td>
-                                <td><?php echo $listPro['product_mainImageId']  ?></td>            
+                                <td><?php echo $listPro['product_mainImage']  ?></td>            
                                 <td><?php echo $listPro['product_name'] ?></td>
                                 <td><?php echo $listPro['product_date']; ?></td>
                                 <td><?php echo $listPro['product_price'] ?></td>
                                 <td><?php echo $listPro['product_sale'] ?></td>
-                                <td><?php echo $listPro['brand_id'] ?></td>
-                                <td><?php echo $listPro['country_id'] ?></td>
+                                <td><?php echo $listPro['brand_name'] ?></td>
+                                <td><?php echo $listPro['country_name'] ?></td>
                                 <td><a href="<?php echo base_url('admin/product/update/' .$listPro['product_id']);?>">Thay đổi</a></td>
                                 <td><a href="<?php echo base_url('admin/product/delete/' .$listPro['product_id']);?>">Xóa</a></td>                            
                             </tr>

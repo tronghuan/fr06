@@ -159,8 +159,8 @@
             $ret['rows'] = $query->num_rows();
             return $ret;
         }
-    public function total_records($titles = '', $var='', $categories = array())
-    {
+        public function total_records($titles = '', $var='', $categories = array())
+        {
         $nums  = 0;
         if ($titles && $var) {
             if (is_array($titles)) {
@@ -175,6 +175,9 @@
                 $where .= empty($categories) ?  '' : ')';
                 $this->db->select($this->_primaryID);
                 $this->db->where($where);
+                $query = $this->db->get($this->_table);
+
+
             }else {
                 $this->db->like($title, $var);
             }
@@ -201,7 +204,7 @@
         }
         $nums = $query->num_rows();
         return $nums;
-    }
+        }
         
         public function gets($product_id )
         {
@@ -234,5 +237,30 @@
             $result = $query->result_array();
             return $result;
         }
+        // Acc1 Start
+        public function count_all_product($range_price, $brand_id){
+            $this->db->select('product_name,product_id,product_mainImageId,product_price,product_sale');
+            $this->db->from($this->_table) ;
+            $this->db->where('product_price >', $range_price['min']);
+            $this->db->where('product_price <', $range_price['max']);
+            if($brand_id != null){
+                $this->db->where_in('brand_id', $brand_id);
+            }
+            $count_all = $this->db->get()->num_rows();
+            return $count_all;
+        }
+        public function get_all_product($range_price, $brand_id, $start, $limit){
+            $this->db->select('product_name,product_id,product_mainImageId,product_price,product_sale');
+            $this->db->from($this->_table) ;
+            $this->db->where('product_price >', $range_price['min']);
+            $this->db->where('product_price <', $range_price['max']);
+            if($brand_id != null){
+                $this->db->where_in('brand_id', $brand_id);
+            }
+            $this->db->limit($limit, $start);
+            $result = $this->db->get()->result_array();
+            return $result;
+        }
+        // Acc1 End
     }
 ?>

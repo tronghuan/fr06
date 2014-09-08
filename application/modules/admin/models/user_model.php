@@ -73,7 +73,8 @@ class User_model extends MY_Model{
                 $where = mb_substr($where,0, $len-3);
                 $this->db->select($this->_primaryID);
                 $this->db->where($where);
-                $query = $this->db->get($this->_table);                
+                $query = $this->db->get($this->_table);
+                
                 $result = $query->result_array();
                 $nums = $query->num_rows();
             }else {
@@ -103,7 +104,7 @@ class User_model extends MY_Model{
     public function getAll(){
         $query = $this->db->get($this->_table);
         $result = $query->result_array();
-        return $result;        
+        return $result;
     }
     public function getOnce($id){
         $this->db->where("user_id = $id");
@@ -128,6 +129,14 @@ class User_model extends MY_Model{
 
     }
     public function isValidate($dataUser){
+        // $data = $this->db->select()->where('user_name',$dataUser['username'])->where('user_password',$dataUser['password'])
+        //     ->get($this->_table)->row_array();
+        // // echo $data;
+        // if(count($data)>0){
+        //     return $dataUser;
+        // }else{
+        //     return false;
+        // }
         $data = $this->getAll();
         foreach($data as $key => $value){
             if(in_array($dataUser['username'], $value) && in_array($dataUser['password'], $value)){

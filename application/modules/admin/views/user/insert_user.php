@@ -48,7 +48,7 @@
                               <input type='radio' name="user_gender" value="0"/> Nữ </td>
                     </tr>
                     <tr>
-                        <td colspan="2" align='center'> <input type="submit" name="submit" value="Add User" class="btn btn-success btn-default" /> </td>
+                        <td colspan="2" align='center'> <input type="submit" name="submit" value="ADD" /> </td>
                     </tr>
                 </table>
             </fieldset>
