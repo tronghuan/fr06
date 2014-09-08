@@ -1,0 +1,68 @@
+        div {
+          margin: 0;
+          padding: 0;
+        }
+        div.rating{
+          font-size: 20px;         
+          position: relative;
+          display: inline-block;
+          unicode-bidi: bidi-override;
+          direction: rtl;
+        }
+        .rating > span {
+           font-family:  FontAwesome;
+        }
+        .rating > span.empty , span.filler {
+          cursor: pointer;
+        }
+        .rating  span.star:before {
+          content: "\f006";
+          color: #e3cf75;
+        }
+        .rating span.empty:hover:before, .rating span.empty:hover~span.empty:before{
+          content: "\f005";
+        }
+        .rating span.filler:hover:before, .rating span.filler:hover~span.filler:before{
+          content: "\f005";
+          color: orange !important;
+        }
+        .rating span.filler:before {
+          content: "\f005";
+          color: gold;
+        }
+        .rating span.haft-star:after{
+          position: absolute;
+        }
+        .rating span.haft-star:before {
+          content: "\f006";
+          }
+        .rating span.haft-star:after {
+          content: "\f089";          
+        }
+        .rating span.haft-star:before:horver {
+          color: gold;
+        }
+        .rating span.haft-star-far {
+          color: gold;
+        }
+        .rating span.haft-star-near {
+          color: #e3cf75;
+        }
+        .rating span:filled {
+          color: gold !important;
+        }
+        div.r-05 span.haft-star:after{
+          left: 0%;
+        }
+        div.r-15 span.haft-star:after{
+          left: 20%;
+        }
+        div.r-25 span.haft-star:after{
+          left: 40%;
+        }
+        div.r-35 span.haft-star:after{
+          left: 60%;
+        }
+        div.r-45 span.haft-star:after{
+          left: 80%;
+        }
